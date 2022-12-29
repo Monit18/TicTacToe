@@ -94,3 +94,8 @@ document.querySelector('.play-again').addEventListener('click',function(){
     flag = true;
 })
 
+function restart(){
+    var status = confirm("Are you sure you want to start with new players ???");
+    if(status)
+        return location.reload();
+}
